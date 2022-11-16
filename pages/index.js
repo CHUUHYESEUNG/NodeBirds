@@ -13,6 +13,7 @@ const Home = () => {
     <AppLayout>
       {isLoggedIn && <PostForm />}
       {mainPosts.map((post) => {
+        console.log("mainPosts 확인 : " + mainPosts);
         return (
           <PostCard key={post.id} post={post} />
         );

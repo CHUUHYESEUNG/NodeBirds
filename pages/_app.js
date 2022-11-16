@@ -5,19 +5,19 @@ import 'antd/dist/antd.css';
 
 import wrapper from '../store/configureStore';
 
-const NodeBird = ({ Component }) => {
+const TruckMap = ({ Component }) => {
   return (
     <>
       <Head>
-        <title>NodeBird</title>
+        <title>TruckMap</title>
       </Head>
       <Component />
     </>
   );
 };
 
-NodeBird.propTypes = {
+TruckMap.propTypes = {
   Component: PropTypes.elementType.isRequired,
 };
 
-export default wrapper.withRedux(NodeBird);
+export default wrapper.withRedux(TruckMap);
